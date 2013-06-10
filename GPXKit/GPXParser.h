@@ -10,8 +10,6 @@
 
 @interface GPXParser : NSObject <NSXMLParserDelegate>
 
-@property (readonly) NSArray *waypoints;
-@property (readonly) NSArray *routes;
-@property (readonly) NSArray *tracks;
+- (NSArray *)waypoints;
 
 @end

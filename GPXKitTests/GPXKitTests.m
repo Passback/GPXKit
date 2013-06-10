@@ -25,16 +25,23 @@
     [super tearDown];
 }
 
-- (void)parserTest
+- (void)parserSingleWaypoint
 {
-//    STFail(@"Unit tests are not implemented yet in GPXKitTests");
-    NSURL *file = [[NSURL alloc] initFileURLWithPath:@"/Users/kms/tmp.gpx"];
+    // FIXME - how to refer to a file within this bundle?
+    NSURL *file = [[NSURL alloc] initFileURLWithPath:@"/Users/kms/SingleWaypoint.gpx"];
     
     GPXParser *gpxParser = [[GPXParser alloc] init];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:file];
     [parser setDelegate:gpxParser];
     
     [parser parse];
+    
+    NSArray *waypoints = [gpxParser waypoints];
+    // Test that array length is one
+    // Test that name is correct
+    // Test that lat is correct
+    // Test that lon is correct
+    // Test that alt is correct
 }
 
 @end

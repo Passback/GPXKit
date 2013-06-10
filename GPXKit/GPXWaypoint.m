@@ -13,6 +13,6 @@
 @synthesize name = _name;
 @synthesize latitude = _latitude;
 @synthesize longitude = _longitude;
-@synthesize altitude = _altitude;
+@synthesize elevation = _elevation;
 
 @end
