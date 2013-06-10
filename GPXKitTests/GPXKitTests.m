@@ -7,6 +7,7 @@
 //
 
 #import "GPXKitTests.h"
+#import "GPXParser.h"
 
 @implementation GPXKitTests
 
@@ -24,9 +25,16 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)parserTest
 {
-    STFail(@"Unit tests are not implemented yet in GPXKitTests");
+//    STFail(@"Unit tests are not implemented yet in GPXKitTests");
+    NSURL *file = [[NSURL alloc] initFileURLWithPath:@"/Users/kms/tmp.gpx"];
+    
+    GPXParser *gpxParser = [[GPXParser alloc] init];
+    NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:file];
+    [parser setDelegate:gpxParser];
+    
+    [parser parse];
 }
 
 @end

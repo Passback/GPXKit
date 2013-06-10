@@ -1,5 +1,5 @@
 //
-//  GPXKit.h
+//  GPXRoute.h
 //  GPXKit
 //
 //  Created by Keith Sharp on 10/06/2013.
@@ -7,3 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+
+@interface GPXRoute : NSObject
+
+@property NSMutableArray *wayPoints;
+@property NSString *routeName;
+
+@end

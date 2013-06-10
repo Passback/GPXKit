@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		C314AB711765C0C4007739D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C314AB701765C0C4007739D1 /* Cocoa.framework */; };
 		C314AB7B1765C0C4007739D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C314AB791765C0C4007739D1 /* InfoPlist.strings */; };
-		C314AB7F1765C0C4007739D1 /* GPXKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C314AB7E1765C0C4007739D1 /* GPXKit.m */; };
 		C314AB871765C0C5007739D1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C314AB861765C0C5007739D1 /* SenTestingKit.framework */; };
 		C314AB881765C0C5007739D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C314AB701765C0C4007739D1 /* Cocoa.framework */; };
 		C314AB8B1765C0C5007739D1 /* GPXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C314AB6D1765C0C4007739D1 /* GPXKit.framework */; };
 		C314AB911765C0C5007739D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C314AB8F1765C0C5007739D1 /* InfoPlist.strings */; };
 		C314AB941765C0C5007739D1 /* GPXKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C314AB931765C0C5007739D1 /* GPXKitTests.m */; };
+		C314AB9F1765C33D007739D1 /* GPXParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C314AB9D1765C33D007739D1 /* GPXParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C314ABA01765C33D007739D1 /* GPXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C314AB9E1765C33D007739D1 /* GPXParser.m */; };
+		C314ABA11765C33D007739D1 /* GPXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C314AB9E1765C33D007739D1 /* GPXParser.m */; };
+		C314ABA41765C688007739D1 /* GPXWaypoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C314ABA21765C688007739D1 /* GPXWaypoint.h */; };
+		C314ABA51765C688007739D1 /* GPXWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C314ABA31765C688007739D1 /* GPXWaypoint.m */; };
+		C314ABA61765C688007739D1 /* GPXWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C314ABA31765C688007739D1 /* GPXWaypoint.m */; };
+		C314ABA91765C821007739D1 /* GPXRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = C314ABA71765C821007739D1 /* GPXRoute.h */; };
+		C314ABAA1765C821007739D1 /* GPXRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = C314ABA81765C821007739D1 /* GPXRoute.m */; };
+		C314ABAB1765C821007739D1 /* GPXRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = C314ABA81765C821007739D1 /* GPXRoute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +45,18 @@
 		C314AB7A1765C0C4007739D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C314AB7C1765C0C4007739D1 /* GPXKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPXKit-Prefix.pch"; sourceTree = "<group>"; };
 		C314AB7D1765C0C4007739D1 /* GPXKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPXKit.h; sourceTree = "<group>"; };
-		C314AB7E1765C0C4007739D1 /* GPXKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPXKit.m; sourceTree = "<group>"; };
 		C314AB851765C0C5007739D1 /* GPXKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPXKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C314AB861765C0C5007739D1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		C314AB8E1765C0C5007739D1 /* GPXKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPXKitTests-Info.plist"; sourceTree = "<group>"; };
 		C314AB901765C0C5007739D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C314AB921765C0C5007739D1 /* GPXKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPXKitTests.h; sourceTree = "<group>"; };
 		C314AB931765C0C5007739D1 /* GPXKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPXKitTests.m; sourceTree = "<group>"; };
+		C314AB9D1765C33D007739D1 /* GPXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXParser.h; sourceTree = "<group>"; };
+		C314AB9E1765C33D007739D1 /* GPXParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXParser.m; sourceTree = "<group>"; };
+		C314ABA21765C688007739D1 /* GPXWaypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXWaypoint.h; sourceTree = "<group>"; };
+		C314ABA31765C688007739D1 /* GPXWaypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXWaypoint.m; sourceTree = "<group>"; };
+		C314ABA71765C821007739D1 /* GPXRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXRoute.h; sourceTree = "<group>"; };
+		C314ABA81765C821007739D1 /* GPXRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXRoute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +124,12 @@
 			isa = PBXGroup;
 			children = (
 				C314AB7D1765C0C4007739D1 /* GPXKit.h */,
-				C314AB7E1765C0C4007739D1 /* GPXKit.m */,
+				C314AB9D1765C33D007739D1 /* GPXParser.h */,
+				C314AB9E1765C33D007739D1 /* GPXParser.m */,
+				C314ABA21765C688007739D1 /* GPXWaypoint.h */,
+				C314ABA31765C688007739D1 /* GPXWaypoint.m */,
+				C314ABA71765C821007739D1 /* GPXRoute.h */,
+				C314ABA81765C821007739D1 /* GPXRoute.m */,
 				C314AB771765C0C4007739D1 /* Supporting Files */,
 			);
 			path = GPXKit;
@@ -153,6 +171,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C314AB9F1765C33D007739D1 /* GPXParser.h in Headers */,
+				C314ABA41765C688007739D1 /* GPXWaypoint.h in Headers */,
+				C314ABA91765C821007739D1 /* GPXRoute.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C314AB7F1765C0C4007739D1 /* GPXKit.m in Sources */,
+				C314ABA01765C33D007739D1 /* GPXParser.m in Sources */,
+				C314ABA51765C688007739D1 /* GPXWaypoint.m in Sources */,
+				C314ABAA1765C821007739D1 /* GPXRoute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C314AB941765C0C5007739D1 /* GPXKitTests.m in Sources */,
+				C314ABA11765C33D007739D1 /* GPXParser.m in Sources */,
+				C314ABA61765C688007739D1 /* GPXWaypoint.m in Sources */,
+				C314ABAB1765C821007739D1 /* GPXRoute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPXKit/GPXKit-Prefix.pch";
 				INFOPLIST_FILE = "GPXKit/GPXKit-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -389,6 +416,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPXKit/GPXKit-Prefix.pch";
 				INFOPLIST_FILE = "GPXKit/GPXKit-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
