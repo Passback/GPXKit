@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C314AB711765C0C4007739D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C314AB701765C0C4007739D1 /* Cocoa.framework */; };
+		C314AB7B1765C0C4007739D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C314AB791765C0C4007739D1 /* InfoPlist.strings */; };
+		C314AB7F1765C0C4007739D1 /* GPXKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C314AB7E1765C0C4007739D1 /* GPXKit.m */; };
+		C314AB871765C0C5007739D1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C314AB861765C0C5007739D1 /* SenTestingKit.framework */; };
+		C314AB881765C0C5007739D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C314AB701765C0C4007739D1 /* Cocoa.framework */; };
+		C314AB8B1765C0C5007739D1 /* GPXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C314AB6D1765C0C4007739D1 /* GPXKit.framework */; };
+		C314AB911765C0C5007739D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C314AB8F1765C0C5007739D1 /* InfoPlist.strings */; };
+		C314AB941765C0C5007739D1 /* GPXKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C314AB931765C0C5007739D1 /* GPXKitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C314AB891765C0C5007739D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C314AB641765C0C4007739D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C314AB6C1765C0C4007739D1;
+			remoteInfo = GPXKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C314AB6D1765C0C4007739D1 /* GPXKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C314AB701765C0C4007739D1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C314AB731765C0C4007739D1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C314AB741765C0C4007739D1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C314AB751765C0C4007739D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C314AB781765C0C4007739D1 /* GPXKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPXKit-Info.plist"; sourceTree = "<group>"; };
+		C314AB7A1765C0C4007739D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C314AB7C1765C0C4007739D1 /* GPXKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPXKit-Prefix.pch"; sourceTree = "<group>"; };
+		C314AB7D1765C0C4007739D1 /* GPXKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPXKit.h; sourceTree = "<group>"; };
+		C314AB7E1765C0C4007739D1 /* GPXKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPXKit.m; sourceTree = "<group>"; };
+		C314AB851765C0C5007739D1 /* GPXKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPXKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C314AB861765C0C5007739D1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C314AB8E1765C0C5007739D1 /* GPXKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPXKitTests-Info.plist"; sourceTree = "<group>"; };
+		C314AB901765C0C5007739D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C314AB921765C0C5007739D1 /* GPXKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPXKitTests.h; sourceTree = "<group>"; };
+		C314AB931765C0C5007739D1 /* GPXKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPXKitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C314AB691765C0C4007739D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C314AB711765C0C4007739D1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C314AB811765C0C5007739D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C314AB871765C0C5007739D1 /* SenTestingKit.framework in Frameworks */,
+				C314AB881765C0C5007739D1 /* Cocoa.framework in Frameworks */,
+				C314AB8B1765C0C5007739D1 /* GPXKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C314AB631765C0C4007739D1 = {
+			isa = PBXGroup;
+			children = (
+				C314AB761765C0C4007739D1 /* GPXKit */,
+				C314AB8C1765C0C5007739D1 /* GPXKitTests */,
+				C314AB6F1765C0C4007739D1 /* Frameworks */,
+				C314AB6E1765C0C4007739D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C314AB6E1765C0C4007739D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C314AB6D1765C0C4007739D1 /* GPXKit.framework */,
+				C314AB851765C0C5007739D1 /* GPXKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C314AB6F1765C0C4007739D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C314AB701765C0C4007739D1 /* Cocoa.framework */,
+				C314AB861765C0C5007739D1 /* SenTestingKit.framework */,
+				C314AB721765C0C4007739D1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C314AB721765C0C4007739D1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C314AB731765C0C4007739D1 /* AppKit.framework */,
+				C314AB741765C0C4007739D1 /* CoreData.framework */,
+				C314AB751765C0C4007739D1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C314AB761765C0C4007739D1 /* GPXKit */ = {
+			isa = PBXGroup;
+			children = (
+				C314AB7D1765C0C4007739D1 /* GPXKit.h */,
+				C314AB7E1765C0C4007739D1 /* GPXKit.m */,
+				C314AB771765C0C4007739D1 /* Supporting Files */,
+			);
+			path = GPXKit;
+			sourceTree = "<group>";
+		};
+		C314AB771765C0C4007739D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C314AB781765C0C4007739D1 /* GPXKit-Info.plist */,
+				C314AB791765C0C4007739D1 /* InfoPlist.strings */,
+				C314AB7C1765C0C4007739D1 /* GPXKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C314AB8C1765C0C5007739D1 /* GPXKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C314AB921765C0C5007739D1 /* GPXKitTests.h */,
+				C314AB931765C0C5007739D1 /* GPXKitTests.m */,
+				C314AB8D1765C0C5007739D1 /* Supporting Files */,
+			);
+			path = GPXKitTests;
+			sourceTree = "<group>";
+		};
+		C314AB8D1765C0C5007739D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C314AB8E1765C0C5007739D1 /* GPXKitTests-Info.plist */,
+				C314AB8F1765C0C5007739D1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C314AB6A1765C0C4007739D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C314AB6C1765C0C4007739D1 /* GPXKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C314AB971765C0C5007739D1 /* Build configuration list for PBXNativeTarget "GPXKit" */;
+			buildPhases = (
+				C314AB681765C0C4007739D1 /* Sources */,
+				C314AB691765C0C4007739D1 /* Frameworks */,
+				C314AB6A1765C0C4007739D1 /* Headers */,
+				C314AB6B1765C0C4007739D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPXKit;
+			productName = GPXKit;
+			productReference = C314AB6D1765C0C4007739D1 /* GPXKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C314AB841765C0C5007739D1 /* GPXKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C314AB9A1765C0C5007739D1 /* Build configuration list for PBXNativeTarget "GPXKitTests" */;
+			buildPhases = (
+				C314AB801765C0C5007739D1 /* Sources */,
+				C314AB811765C0C5007739D1 /* Frameworks */,
+				C314AB821765C0C5007739D1 /* Resources */,
+				C314AB831765C0C5007739D1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C314AB8A1765C0C5007739D1 /* PBXTargetDependency */,
+			);
+			name = GPXKitTests;
+			productName = GPXKitTests;
+			productReference = C314AB851765C0C5007739D1 /* GPXKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C314AB641765C0C4007739D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Passback Consulting";
+			};
+			buildConfigurationList = C314AB671765C0C4007739D1 /* Build configuration list for PBXProject "GPXKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C314AB631765C0C4007739D1;
+			productRefGroup = C314AB6E1765C0C4007739D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C314AB6C1765C0C4007739D1 /* GPXKit */,
+				C314AB841765C0C5007739D1 /* GPXKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C314AB6B1765C0C4007739D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C314AB7B1765C0C4007739D1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C314AB821765C0C5007739D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C314AB911765C0C5007739D1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C314AB831765C0C5007739D1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C314AB681765C0C4007739D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C314AB7F1765C0C4007739D1 /* GPXKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C314AB801765C0C5007739D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C314AB941765C0C5007739D1 /* GPXKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C314AB8A1765C0C5007739D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C314AB6C1765C0C4007739D1 /* GPXKit */;
+			targetProxy = C314AB891765C0C5007739D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C314AB791765C0C4007739D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C314AB7A1765C0C4007739D1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C314AB8F1765C0C5007739D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C314AB901765C0C5007739D1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C314AB951765C0C5007739D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C314AB961765C0C5007739D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C314AB981765C0C5007739D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPXKit/GPXKit-Prefix.pch";
+				INFOPLIST_FILE = "GPXKit/GPXKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		C314AB991765C0C5007739D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPXKit/GPXKit-Prefix.pch";
+				INFOPLIST_FILE = "GPXKit/GPXKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		C314AB9B1765C0C5007739D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPXKit/GPXKit-Prefix.pch";
+				INFOPLIST_FILE = "GPXKitTests/GPXKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C314AB9C1765C0C5007739D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPXKit/GPXKit-Prefix.pch";
+				INFOPLIST_FILE = "GPXKitTests/GPXKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C314AB671765C0C4007739D1 /* Build configuration list for PBXProject "GPXKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C314AB951765C0C5007739D1 /* Debug */,
+				C314AB961765C0C5007739D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C314AB971765C0C5007739D1 /* Build configuration list for PBXNativeTarget "GPXKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C314AB981765C0C5007739D1 /* Debug */,
+				C314AB991765C0C5007739D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C314AB9A1765C0C5007739D1 /* Build configuration list for PBXNativeTarget "GPXKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C314AB9B1765C0C5007739D1 /* Debug */,
+				C314AB9C1765C0C5007739D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C314AB641765C0C4007739D1 /* Project object */;
+}
