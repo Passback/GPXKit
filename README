@@ -1,5 +1,5 @@
 GPXKit is an Objective C framework for parsing the GPX files that are 
-commonly used to exchnage information about waypoints, routes, and tracks
+commonly used to exchange information about waypoints, routes, and tracks
 by users of GPS devices and mapping applications.
 
 The framework is designed to be included as a private framework within an

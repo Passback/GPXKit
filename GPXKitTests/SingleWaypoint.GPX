@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="Passback Consulting" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <link href="http://www.passback.co.uk">
+      <text>Passback Consulting</text>
+    </link>
+    <time>2013-06-11T16:48:53Z</time>
+    <bounds maxlat="55.861780336126685" maxlon="-4.25362785346806" minlat="55.861780336126685" minlon="-4.25362785346806"/>
+  </metadata>
+
+  <wpt lat="55.861780336126685" lon="-4.25362785346806">
+    <ele>29</ele>
+    <time>2013-06-11T16:47:20Z</time>
+    <name>Apple Store Glasgow</name>
+    <sym>Flag, Blue</sym>
+    <type>user</type>
+  </wpt>
+
+</gpx>

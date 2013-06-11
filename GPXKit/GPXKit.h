@@ -6,4 +6,6 @@
 //  Copyright (c) 2013 Passback Consulting. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "GPXParser.h"
+#import "GPXWaypoint"
+#import "GPXRoute.h"

@@ -41,6 +41,19 @@
     return (NSArray *)_waypoints;
 }
 
+- (BOOL)parseDocumentWithURL:(NSURL *)url
+{
+    if (url == nil) {
+        return NO;
+    }
+    
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+    [xmlParser setDelegate:self];
+    [xmlParser setShouldResolveExternalEntities:NO];
+    
+    return [xmlParser parse];
+}
+
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
     if ([elementName isEqualToString:@"wpt"]) {

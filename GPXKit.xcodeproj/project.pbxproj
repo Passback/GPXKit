@@ -17,12 +17,15 @@
 		C314AB9F1765C33D007739D1 /* GPXParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C314AB9D1765C33D007739D1 /* GPXParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C314ABA01765C33D007739D1 /* GPXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C314AB9E1765C33D007739D1 /* GPXParser.m */; };
 		C314ABA11765C33D007739D1 /* GPXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C314AB9E1765C33D007739D1 /* GPXParser.m */; };
-		C314ABA41765C688007739D1 /* GPXWaypoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C314ABA21765C688007739D1 /* GPXWaypoint.h */; };
+		C314ABA41765C688007739D1 /* GPXWaypoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C314ABA21765C688007739D1 /* GPXWaypoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C314ABA51765C688007739D1 /* GPXWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C314ABA31765C688007739D1 /* GPXWaypoint.m */; };
 		C314ABA61765C688007739D1 /* GPXWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C314ABA31765C688007739D1 /* GPXWaypoint.m */; };
-		C314ABA91765C821007739D1 /* GPXRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = C314ABA71765C821007739D1 /* GPXRoute.h */; };
+		C314ABA91765C821007739D1 /* GPXRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = C314ABA71765C821007739D1 /* GPXRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C314ABAA1765C821007739D1 /* GPXRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = C314ABA81765C821007739D1 /* GPXRoute.m */; };
 		C314ABAB1765C821007739D1 /* GPXRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = C314ABA81765C821007739D1 /* GPXRoute.m */; };
+		C3E437351765F7AE005EB5B4 /* GPXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C314AB7D1765C0C4007739D1 /* GPXKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3E4373817678CFF005EB5B4 /* SingleWaypoint.GPX in Resources */ = {isa = PBXBuildFile; fileRef = C3E4373617678CFF005EB5B4 /* SingleWaypoint.GPX */; };
+		C3E4373917678CFF005EB5B4 /* TwoWaypoints.GPX in Resources */ = {isa = PBXBuildFile; fileRef = C3E4373717678CFF005EB5B4 /* TwoWaypoints.GPX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,8 @@
 		C314ABA31765C688007739D1 /* GPXWaypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXWaypoint.m; sourceTree = "<group>"; };
 		C314ABA71765C821007739D1 /* GPXRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXRoute.h; sourceTree = "<group>"; };
 		C314ABA81765C821007739D1 /* GPXRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXRoute.m; sourceTree = "<group>"; };
+		C3E4373617678CFF005EB5B4 /* SingleWaypoint.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SingleWaypoint.GPX; sourceTree = "<group>"; };
+		C3E4373717678CFF005EB5B4 /* TwoWaypoints.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TwoWaypoints.GPX; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +163,8 @@
 		C314AB8D1765C0C5007739D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3E4373617678CFF005EB5B4 /* SingleWaypoint.GPX */,
+				C3E4373717678CFF005EB5B4 /* TwoWaypoints.GPX */,
 				C314AB8E1765C0C5007739D1 /* GPXKitTests-Info.plist */,
 				C314AB8F1765C0C5007739D1 /* InfoPlist.strings */,
 			);
@@ -171,6 +178,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E437351765F7AE005EB5B4 /* GPXKit.h in Headers */,
 				C314AB9F1765C33D007739D1 /* GPXParser.h in Headers */,
 				C314ABA41765C688007739D1 /* GPXWaypoint.h in Headers */,
 				C314ABA91765C821007739D1 /* GPXRoute.h in Headers */,
@@ -258,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C314AB911765C0C5007739D1 /* InfoPlist.strings in Resources */,
+				C3E4373817678CFF005EB5B4 /* SingleWaypoint.GPX in Resources */,
+				C3E4373917678CFF005EB5B4 /* TwoWaypoints.GPX in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +477,7 @@
 				C314AB991765C0C5007739D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C314AB9A1765C0C5007739D1 /* Build configuration list for PBXNativeTarget "GPXKitTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +486,7 @@
 				C314AB9C1765C0C5007739D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

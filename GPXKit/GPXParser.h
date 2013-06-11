@@ -12,4 +12,6 @@
 
 - (NSArray *)waypoints;
 
+- (BOOL)parseDocumentWithURL:(NSURL *)url;
+
 @end

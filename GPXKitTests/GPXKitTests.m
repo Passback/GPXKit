@@ -27,16 +27,16 @@
 
 - (void)parserSingleWaypoint
 {
-    // FIXME - how to refer to a file within this bundle?
-    NSURL *file = [[NSURL alloc] initFileURLWithPath:@"/Users/kms/SingleWaypoint.gpx"];
+    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"SingleWaypoint" ofType:@"GPX"];
+    NSURL *file = [[NSURL alloc] initFileURLWithPath:filePath];
     
     GPXParser *gpxParser = [[GPXParser alloc] init];
-    NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:file];
-    [parser setDelegate:gpxParser];
+    if (![gpxParser parseDocumentWithURL:file])
+    {
+        // Highlight failure of somekind
+    }
     
-    [parser parse];
-    
-    NSArray *waypoints = [gpxParser waypoints];
+    // NSArray *waypoints = [gpxParser waypoints];
     // Test that array length is one
     // Test that name is correct
     // Test that lat is correct
