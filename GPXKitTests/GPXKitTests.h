@@ -10,6 +10,4 @@
 
 @interface GPXKitTests : SenTestCase
 
-- (void)testParseSingleWaypoint;
-
 @end

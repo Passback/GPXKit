@@ -6,19 +6,18 @@
       <text>Passback Consulting</text>
     </link>
     <time>2013-06-11T16:50:34Z</time>
-    <bounds maxlat="55.87676634080708" maxlon="-4.25362785346806" minlat="55.861780336126685" minlon="-4.365726253017783"/>
   </metadata>
 
-  <wpt lat="55.87676634080708" lon="-4.365726253017783">
-    <ele>8.19140625</ele>
+  <wpt lat="55.876766" lon="-4.365726">
+    <ele>8.0</ele>
     <time>2013-06-11T16:49:39Z</time>
     <name>Apple Store Braehead</name>
     <sym>Flag, Blue</sym>
     <type>user</type>
   </wpt>
 
-  <wpt lat="55.861780336126685" lon="-4.25362785346806">
-    <ele>29</ele>
+  <wpt lat="55.861780" lon="-4.253628">
+    <ele>29.0</ele>
     <time>2013-06-11T16:47:20Z</time>
     <name>Apple Store Glasgow</name>
     <sym>Flag, Blue</sym>
