@@ -12,6 +12,7 @@
 
 - (NSArray *)waypoints;
 - (NSArray *)routes;
+- (NSArray *)tracks;
 
 - (BOOL)parseDocumentWithURL:(NSURL *)url;
 

@@ -14,6 +14,7 @@
 @synthesize latitude = _latitude;
 @synthesize longitude = _longitude;
 @synthesize elevation = _elevation;
+@synthesize time = _time;
 
 - (NSString *)description
 {

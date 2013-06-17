@@ -21,4 +21,9 @@
     return self;
 }
 
+- (NSString *)description
+{
+    return [[NSString alloc] initWithFormat:@"%@ has %ld waypoints", self.routeName, [self.wayPoints count]];
+}
+
 @end

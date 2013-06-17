@@ -14,5 +14,6 @@
 @property double latitude;
 @property double longitude;
 @property double elevation;
+@property NSDate *time;
 
 @end
