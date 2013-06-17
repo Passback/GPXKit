@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3103417176F0035004427A1 /* SingleRoute.GPX in Resources */ = {isa = PBXBuildFile; fileRef = C3103416176F0035004427A1 /* SingleRoute.GPX */; };
 		C314AB711765C0C4007739D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C314AB701765C0C4007739D1 /* Cocoa.framework */; };
 		C314AB7B1765C0C4007739D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C314AB791765C0C4007739D1 /* InfoPlist.strings */; };
 		C314AB871765C0C5007739D1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C314AB861765C0C5007739D1 /* SenTestingKit.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3103416176F0035004427A1 /* SingleRoute.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SingleRoute.GPX; sourceTree = "<group>"; };
 		C314AB6D1765C0C4007739D1 /* GPXKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C314AB701765C0C4007739D1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C314AB731765C0C4007739D1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -163,6 +165,7 @@
 		C314AB8D1765C0C5007739D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3103416176F0035004427A1 /* SingleRoute.GPX */,
 				C3E4373617678CFF005EB5B4 /* SingleWaypoint.GPX */,
 				C3E4373717678CFF005EB5B4 /* TwoWaypoints.GPX */,
 				C314AB8E1765C0C5007739D1 /* GPXKitTests-Info.plist */,
@@ -268,6 +271,7 @@
 				C314AB911765C0C5007739D1 /* InfoPlist.strings in Resources */,
 				C3E4373817678CFF005EB5B4 /* SingleWaypoint.GPX in Resources */,
 				C3E4373917678CFF005EB5B4 /* TwoWaypoints.GPX in Resources */,
+				C3103417176F0035004427A1 /* SingleRoute.GPX in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

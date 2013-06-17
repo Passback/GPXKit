@@ -11,6 +11,7 @@
 @interface GPXParser : NSObject <NSXMLParserDelegate>
 
 - (NSArray *)waypoints;
+- (NSArray *)routes;
 
 - (BOOL)parseDocumentWithURL:(NSURL *)url;
 

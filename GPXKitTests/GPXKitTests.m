@@ -9,6 +9,7 @@
 #import "GPXKitTests.h"
 #import "GPXParser.h"
 #import "GPXWaypoint.h"
+#import "GPXRoute.h"
 
 @implementation GPXKitTests
 
@@ -71,6 +72,26 @@
     STAssertEquals([wpt latitude], 55.861780, @"Waypoint has latitude: %f", [wpt latitude]);
     STAssertEquals([wpt longitude], -4.253628, @"Waypoint has longitude: %f", [wpt longitude]);
     STAssertEquals([wpt elevation], 29.0, @"Waypoint has elevation: %f", [wpt elevation]);
+}
+
+- (void)testParseOneRoute
+{
+    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"SingleRoute" ofType:@"GPX"];
+    NSURL *file = [[NSURL alloc] initFileURLWithPath:filePath];
+    
+    GPXParser *gpxParser = [[GPXParser alloc] init];
+    STAssertTrue([gpxParser parseDocumentWithURL:file], @"Parser failed to parse file: %@", filePath);
+    
+    // Test that number of routes is one
+    NSArray *routes = [gpxParser routes];
+    STAssertEquals([routes count], (NSUInteger)1, @"Routes array has %d member(s)", [routes count]);
+    
+    // Test that number of waypoints in the route is two
+    GPXRoute *rte = [routes objectAtIndex:0];
+    STAssertEquals([[rte wayPoints] count], (NSUInteger)2, @"Route has %d waypoints", [[rte wayPoints] count]);
+    
+    // Test name of route
+    STAssertEqualObjects([rte routeName], @"Apple to Apple", @"Route has name %@", [rte routeName]);
 }
 
 @end

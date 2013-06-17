@@ -8,21 +8,26 @@
 
 #import "GPXParser.h"
 #import "GPXWaypoint.h"
+#import "GPXRoute.h"
 
 @interface GPXParser ()
 {
     // Booleans to determine which element/attribute we are in when parsing
     BOOL inName;
-    BOOL inWpt;
     BOOL inEle;
+    BOOL inWpt;
+    BOOL inRte;
+    BOOL inRtePt;
     
     // The results of the parsing are held internally as mutable arrays, but
     // returned as non-mutable arrays.  I don't know how to do that with
     // properties.
     NSMutableArray *_waypoints;
+    NSMutableArray *_routes;
     
     // Temp variables to hold waypoints, routes, and tracks, as we parse them
     GPXWaypoint *waypoint;
+    GPXRoute *route;
 }
 @end
 
@@ -32,6 +37,7 @@
 {
     if (self = [super init]) {
         _waypoints = [[NSMutableArray alloc] init];
+        _routes = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -39,6 +45,11 @@
 - (NSArray *)waypoints
 {
     return (NSArray *)_waypoints;
+}
+
+- (NSArray *)routes
+{
+    return (NSArray *)_routes;
 }
 
 - (BOOL)parseDocumentWithURL:(NSURL *)url
@@ -67,16 +78,28 @@
         inName = YES;
     } else if ([elementName isEqualToString:@"ele"]) {
         inEle = YES;
+    } else if ([elementName isEqualToString:@"rte"]) {
+        inRte = YES;
+        route = [[GPXRoute alloc] init];
+    } else if ([elementName isEqualToString:@"rtept"]) {
+        inRtePt = YES;
+        waypoint = [[GPXWaypoint alloc] init];
+        NSString *lat = [attributeDict objectForKey:@"lat"];
+        [waypoint setLatitude:[lat doubleValue]];
+        NSString *lon = [attributeDict objectForKey:@"lon"];
+        [waypoint setLongitude:[lon doubleValue]];
     }
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
 {
-    if (inName && inWpt) {
+    if (inName && (inWpt || inRtePt)) {
         [waypoint setName:string];
-    } else if (inEle && inWpt) {
+    } else if (inEle && (inWpt || inRtePt)) {
         [waypoint setElevation:[string doubleValue]];
-    }
+    } else if (inName && inRte) {
+        [route setRouteName:string];
+    } 
 }
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
@@ -88,6 +111,12 @@
         inName = NO;
     } else if ([elementName isEqualToString:@"ele"]) {
         inEle = NO;
+    } else if ([elementName isEqualToString:@"rte"]) {
+        inRte = NO;
+        [_routes addObject:route];
+    } else if ([elementName isEqualToString:@"rtept"]) {
+        inRtePt = NO;
+        [[route wayPoints] addObject:waypoint];
     }
 }
 

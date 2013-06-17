@@ -13,4 +13,12 @@
 @synthesize wayPoints = _wayPoints;
 @synthesize routeName = _routeName;
 
+- (id)init
+{
+    if (self = [super init]) {
+        _wayPoints = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
 @end

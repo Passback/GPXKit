@@ -15,4 +15,9 @@
 @synthesize longitude = _longitude;
 @synthesize elevation = _elevation;
 
+- (NSString *)description
+{
+    return [[NSString alloc] initWithFormat:@"%@, %f, %f", self.name, self.latitude, self.longitude];
+}
+
 @end
