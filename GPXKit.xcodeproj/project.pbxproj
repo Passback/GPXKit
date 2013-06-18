@@ -26,6 +26,9 @@
 		C314ABA91765C821007739D1 /* GPXRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = C314ABA71765C821007739D1 /* GPXRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C314ABAA1765C821007739D1 /* GPXRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = C314ABA81765C821007739D1 /* GPXRoute.m */; };
 		C314ABAB1765C821007739D1 /* GPXRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = C314ABA81765C821007739D1 /* GPXRoute.m */; };
+		C3CFCDE417704FA7001D9F8F /* Blackhouse Heights.GPX in Resources */ = {isa = PBXBuildFile; fileRef = C3CFCDE317704FA7001D9F8F /* Blackhouse Heights.GPX */; };
+		C3CFCDE717705E2B001D9F8F /* SingleTrack.GPX in Resources */ = {isa = PBXBuildFile; fileRef = C3CFCDE517705E2B001D9F8F /* SingleTrack.GPX */; };
+		C3CFCDE817705E2B001D9F8F /* TwoTracks.GPX in Resources */ = {isa = PBXBuildFile; fileRef = C3CFCDE617705E2B001D9F8F /* TwoTracks.GPX */; };
 		C3E437351765F7AE005EB5B4 /* GPXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C314AB7D1765C0C4007739D1 /* GPXKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3E4373817678CFF005EB5B4 /* SingleWaypoint.GPX in Resources */ = {isa = PBXBuildFile; fileRef = C3E4373617678CFF005EB5B4 /* SingleWaypoint.GPX */; };
 		C3E4373917678CFF005EB5B4 /* TwoWaypoints.GPX in Resources */ = {isa = PBXBuildFile; fileRef = C3E4373717678CFF005EB5B4 /* TwoWaypoints.GPX */; };
@@ -66,6 +69,9 @@
 		C314ABA31765C688007739D1 /* GPXWaypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXWaypoint.m; sourceTree = "<group>"; };
 		C314ABA71765C821007739D1 /* GPXRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXRoute.h; sourceTree = "<group>"; };
 		C314ABA81765C821007739D1 /* GPXRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXRoute.m; sourceTree = "<group>"; };
+		C3CFCDE317704FA7001D9F8F /* Blackhouse Heights.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Blackhouse Heights.GPX"; sourceTree = "<group>"; };
+		C3CFCDE517705E2B001D9F8F /* SingleTrack.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SingleTrack.GPX; sourceTree = "<group>"; };
+		C3CFCDE617705E2B001D9F8F /* TwoTracks.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TwoTracks.GPX; sourceTree = "<group>"; };
 		C3E4373617678CFF005EB5B4 /* SingleWaypoint.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SingleWaypoint.GPX; sourceTree = "<group>"; };
 		C3E4373717678CFF005EB5B4 /* TwoWaypoints.GPX */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TwoWaypoints.GPX; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +177,9 @@
 		C314AB8D1765C0C5007739D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3CFCDE517705E2B001D9F8F /* SingleTrack.GPX */,
+				C3CFCDE617705E2B001D9F8F /* TwoTracks.GPX */,
+				C3CFCDE317704FA7001D9F8F /* Blackhouse Heights.GPX */,
 				C3103416176F0035004427A1 /* SingleRoute.GPX */,
 				C3E4373617678CFF005EB5B4 /* SingleWaypoint.GPX */,
 				C3E4373717678CFF005EB5B4 /* TwoWaypoints.GPX */,
@@ -279,6 +288,9 @@
 				C3E4373817678CFF005EB5B4 /* SingleWaypoint.GPX in Resources */,
 				C3E4373917678CFF005EB5B4 /* TwoWaypoints.GPX in Resources */,
 				C3103417176F0035004427A1 /* SingleRoute.GPX in Resources */,
+				C3CFCDE417704FA7001D9F8F /* Blackhouse Heights.GPX in Resources */,
+				C3CFCDE717705E2B001D9F8F /* SingleTrack.GPX in Resources */,
+				C3CFCDE817705E2B001D9F8F /* TwoTracks.GPX in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

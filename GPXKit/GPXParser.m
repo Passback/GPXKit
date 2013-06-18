@@ -25,12 +25,12 @@
     
     // The results of the parsing are held internally as mutable arrays, but
     // returned as non-mutable arrays.
-    NSMutableArray *_waypoints;
+    NSMutableArray *_wayPoints;
     NSMutableArray *_routes;
     NSMutableArray *_tracks;
     
     // Temp variables to hold waypoints, routes, and tracks, as we parse them
-    GPXWaypoint *waypoint;
+    GPXWaypoint *wayPoint;
     GPXRoute *route;
     GPXTrack *track;
     
@@ -44,7 +44,7 @@
 - (id)init
 {
     if (self = [super init]) {
-        _waypoints = [[NSMutableArray alloc] init];
+        _wayPoints = [[NSMutableArray alloc] init];
         _routes = [[NSMutableArray alloc] init];
         _tracks = [[NSMutableArray alloc] init];
         
@@ -59,9 +59,9 @@
     return self;
 }
 
-- (NSArray *)waypoints
+- (NSArray *)wayPoints
 {
-    return (NSArray *)_waypoints;
+    return (NSArray *)_wayPoints;
 }
 
 - (NSArray *)routes
@@ -91,11 +91,11 @@
 {
     if ([elementName isEqualToString:@"wpt"]) {
         inWpt = YES;
-        waypoint = [[GPXWaypoint alloc] init];
+        wayPoint = [[GPXWaypoint alloc] init];
         NSString *lat = [attributeDict objectForKey:@"lat"];
-        [waypoint setLatitude:[lat doubleValue]];
+        [wayPoint setLatitude:[lat doubleValue]];
         NSString *lon = [attributeDict objectForKey:@"lon"];
-        [waypoint setLongitude:[lon doubleValue]];
+        [wayPoint setLongitude:[lon doubleValue]];
     } else if ([elementName isEqualToString:@"name"]) {
         inName = YES;
     } else if ([elementName isEqualToString:@"ele"]) {
@@ -107,37 +107,37 @@
         route = [[GPXRoute alloc] init];
     } else if ([elementName isEqualToString:@"rtept"]) {
         inRtePt = YES;
-        waypoint = [[GPXWaypoint alloc] init];
+        wayPoint = [[GPXWaypoint alloc] init];
         NSString *lat = [attributeDict objectForKey:@"lat"];
-        [waypoint setLatitude:[lat doubleValue]];
+        [wayPoint setLatitude:[lat doubleValue]];
         NSString *lon = [attributeDict objectForKey:@"lon"];
-        [waypoint setLongitude:[lon doubleValue]];
+        [wayPoint setLongitude:[lon doubleValue]];
     } else if ([elementName isEqualToString:@"trk"]) {
         inTrk = YES;
         track = [[GPXTrack alloc] init];
-    } else if ([elementName isEqualToString:@"rtept"]) {
+    } else if ([elementName isEqualToString:@"trkpt"]) {
         inTrkPt = YES;
-        waypoint = [[GPXWaypoint alloc] init];
+        wayPoint = [[GPXWaypoint alloc] init];
         NSString *lat = [attributeDict objectForKey:@"lat"];
-        [waypoint setLatitude:[lat doubleValue]];
+        [wayPoint setLatitude:[lat doubleValue]];
         NSString *lon = [attributeDict objectForKey:@"lon"];
-        [waypoint setLongitude:[lon doubleValue]];
+        [wayPoint setLongitude:[lon doubleValue]];
     }
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
 {
     if (inName && (inWpt || inRtePt || inTrkPt)) {
-        [waypoint setName:string];
+        [wayPoint setName:string];
     } else if (inEle && (inWpt || inRtePt || inTrkPt)) {
-        [waypoint setElevation:[string doubleValue]];
+        [wayPoint setElevation:[string doubleValue]];
     } else if (inTime && (inWpt || inRtePt || inTrkPt)) {
         NSDate *time = [timeFormatter dateFromString:string];
-        [waypoint setTime:time];
+        [wayPoint setTime:time];
     } else if (inName && inRte) {
         [route setRouteName:string];
     } else if (inName && inTrk) {
-        [route setRouteName:string];
+        [track setTrackName:string];
     }
 }
 
@@ -145,7 +145,7 @@
 {
     if ([elementName isEqualToString:@"wpt"]) {
         inWpt = NO;
-        [_waypoints addObject:waypoint];
+        [_wayPoints addObject:wayPoint];
     } else if ([elementName isEqualToString:@"name"]) {
         inName = NO;
     } else if ([elementName isEqualToString:@"ele"]) {
@@ -157,13 +157,13 @@
         [_routes addObject:route];
     } else if ([elementName isEqualToString:@"rtept"]) {
         inRtePt = NO;
-        [[route wayPoints] addObject:waypoint];
+        [[route wayPoints] addObject:wayPoint];
     } else if ([elementName isEqualToString:@"trk"]) {
         inTrk = NO;
         [_tracks addObject:track];
     } else if ([elementName isEqualToString:@"trkpt"]) {
         inTrkPt = NO;
-        [[track trackPoints] addObject:waypoint];
+        [[track trackPoints] addObject:wayPoint];
     }
 }
 

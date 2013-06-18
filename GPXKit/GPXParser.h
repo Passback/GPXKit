@@ -10,7 +10,7 @@
 
 @interface GPXParser : NSObject <NSXMLParserDelegate>
 
-- (NSArray *)waypoints;
+- (NSArray *)wayPoints;
 - (NSArray *)routes;
 - (NSArray *)tracks;
 
